@@ -118,6 +118,8 @@ fi
 alias zshconfing="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias p10kconfig="nvim ~/.p10k.zsh"
+alias nvimconfig="cd ~/.config/nvim/ && nvim ."
+alias reload="source ~/.zshrc"
 alias p="paru -S "
 alias y="yay -S"
 alias pq="sudo pacman -S"
@@ -129,10 +131,12 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 alias emulator="$ANDROID_HOME/emulator/emulator"
 alias android-studio="/home/radhakrishna/Documents/android-studio/bin/studio.sh"
+
+# Directory shortcut
 alias Downloads="cd /home/radhakrishna/Downloads"
 alias Documents="cd /home/radhakrishna/Documents"
-alias Videos=   "cd /home/radhakrishna/Videos"
-alias Pictures= "cd /home/radhakrishna/Pictures"
+alias Videos="cd /home/radhakrishna/Videos"
+alias Pictures="cd /home/radhakrishna/Pictures"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
