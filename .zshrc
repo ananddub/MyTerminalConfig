@@ -115,7 +115,7 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfing="nvim ~/.zshrc"
+alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias p10kconfig="nvim ~/.p10k.zsh"
 alias nvimconfig="cd ~/.config/nvim/ && nvim ."
@@ -126,17 +126,18 @@ alias pq="sudo pacman -S"
 alias cat="bat"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-alias emulator="$ANDROID_HOME/emulator/emulator"
-alias android-studio="/home/radhakrishna/Documents/android-studio/bin/studio.sh"
 
+
+# alias android-studio="/home/radhakrishna/Documents/android-studio/bin/studio.sh"
+alias btop="btop --utf-force"
 # Directory shortcut
-alias Downloads="cd /home/radhakrishna/Downloads"
-alias Documents="cd /home/radhakrishna/Documents"
-alias Videos="cd /home/radhakrishna/Videos"
-alias Pictures="cd /home/radhakrishna/Pictures"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+alias myemulator="$ANDROID_HOME/emulator/emulator"
+eval "$(zoxide init --cmd cd zsh)"
